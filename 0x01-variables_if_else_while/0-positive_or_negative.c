@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 /**
 * main - Start
 * Return: Always 0
