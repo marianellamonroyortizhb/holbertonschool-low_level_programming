@@ -7,9 +7,9 @@ int main(void)
 {
 	int n = 0x16;
 
-	for (n = '0'; n <= 'F'; ++n)
+	for (n = '0'; n <= 'f'; ++n)
 	{
-	if (n <= '9' || n >= 'A')
+	if (n <= '9' || n >= 'a')
 	{
 	putchar(n);
 	}
