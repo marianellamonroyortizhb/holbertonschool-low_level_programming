@@ -19,7 +19,7 @@ int main(void)
 			putchar(u);
 				if (u == '9' && d == '8')
 				{
-				continue;
+					continue;
 				}
 			putchar(',');
 			putchar(' ');
@@ -28,4 +28,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
