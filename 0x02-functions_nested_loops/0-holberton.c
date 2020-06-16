@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	char array[] = "Holberton";
+	char array[] = "Holberton\n";
 
 	for (i = 0; i <= 8; i++)
 	{
@@ -17,4 +17,3 @@ int main(void)
 	}
 	return (0);
 }
-
