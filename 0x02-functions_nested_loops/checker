@@ -4,4 +4,4 @@ betty $@
 gcc -Wall -Werror -Wextra -pedantic $@
 echo
 ./a.out
-echo
+
