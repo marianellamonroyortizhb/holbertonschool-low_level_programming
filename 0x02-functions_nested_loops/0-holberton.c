@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  *main - Prints Holberton
- *Return : 0 Success
- *_putchar - Print  an array
+ *Return: 0 Success
+ *
  */
 
 int main(void)
