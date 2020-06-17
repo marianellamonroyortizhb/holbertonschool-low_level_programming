@@ -1,0 +1,19 @@
+#include "holberton.h"
+/**
+ *main - Prints alphabet
+ *Return: 0 Success
+ *
+ */
+
+int main(void)
+{
+	char i;
+
+	for (c = a; c <= 9; c++)
+	{
+	_putchar(c);
+	}
+
+	return (0);
+}
+
