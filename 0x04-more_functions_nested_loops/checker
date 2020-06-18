@@ -1,0 +1,12 @@
+#!/bin/bash
+#Unofficial Checker to Holberton betty
+#Repository: https://gist.github.com/Athesto/9558e14c537369e36dad597c2769f52a
+
+REDCOLOR="\e[31m"
+ENDCOLOR="\e[0m"
+
+clear
+betty $@
+gcc -Wall -Werror -Wextra -pedantic $@ || echo -e "$REDCOLOR FAILED GCC $ENDCOLOR"
+echo
+./a.out
