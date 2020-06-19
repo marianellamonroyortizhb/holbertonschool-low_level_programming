@@ -1,5 +1,5 @@
-julien@ubuntu:~/0x04$ cat 4-main.c
 #include "holberton.h"
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -7,6 +7,9 @@ julien@ubuntu:~/0x04$ cat 4-main.c
  */
 int main(void)
 {
-	print_most_numbers();
+	print_triangle(2);
+	print_triangle(10);
+	print_triangle(1);
+	print_triangle(0);
 	return (0);
 }
