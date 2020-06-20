@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - print prime numbers
- *Return: i success
+ *Return: 0 success
  */
 int main(void)
 {
@@ -9,7 +9,7 @@ int main(void)
 
 	long int n = 612852475143;
 
-	for ((i = n); i <= n; i--)
+	for ((i = n / 2); i <= n; i--)
 	{
 		prime = n % i;
 
@@ -20,5 +20,5 @@ int main(void)
 			break;
 		}
 	}
-	return (i);
+	return (0);
 }
