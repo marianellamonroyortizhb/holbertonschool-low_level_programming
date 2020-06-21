@@ -19,7 +19,7 @@ int main(void)
 		}
 		prime++;
 	}
-	printf("%ld", prime);
+	printf("%ld", prime - 1);
 	printf("\n");
 	return (0);
 }
