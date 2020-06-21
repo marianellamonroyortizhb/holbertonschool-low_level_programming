@@ -19,7 +19,6 @@ void print_number(int n)
 		contador++;
 		divisor = divisor * 10;
 		cociente = n / divisor;
-		printf("%d", contador);
 	}
 	printf("%d", contador);
 
@@ -31,6 +30,6 @@ void print_number(int n)
 		n = n / d;
 		_putchar('\n');
 
-	} while ((n / d) > 0);
+	} while ((n / d) > 0);x
 
 }
