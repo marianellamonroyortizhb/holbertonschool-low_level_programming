@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  *print_triangle - print a triangle
  *@size: size of the square.
@@ -28,8 +27,8 @@ void print_triangle(int size)
 			}
 			j++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
-	_putchar('\n');
+
 }
