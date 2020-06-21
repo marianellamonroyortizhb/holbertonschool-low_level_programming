@@ -5,20 +5,21 @@
  */
 int main(void)
 {
-	long int i, prime;
+	long int prime;
 
 	long int n = 612852475143;
 
-	for ((i = n / 2); i <= n; i--)
-	{
-		prime = n % i;
+	prime = 2;
 
-		if (prime == 0 && i <= n)
+	while (prime <= n)
+	{
+		while ((n % prime) == 0)
 		{
-			printf("%ld", i);
-			printf("\n");
-			break;
+			n = n / prime;
 		}
+		prime++;
 	}
+	printf("%ld", prime);
+	printf("\n");
 	return (0);
 }
