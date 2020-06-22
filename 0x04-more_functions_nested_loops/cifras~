@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main ()
+{
+	int numero = 26;
+	int cifras = 1;
+
+	while (numero >= 10)
+	{
+	numero = numero / 10;
+	cifras ++;
+	}
+	printf("Tiene %d cifras");
+	return 0;
+}

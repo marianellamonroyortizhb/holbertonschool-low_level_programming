@@ -6,30 +6,19 @@
  */
 void print_number(int n)
 {
-	int cociente, divisor, contador;
+	int d = 10;
 
-	int d, dig;
+	int i;
 
-	cociente = 0;
-	divisor = 1;
-	contador = 0;
-
-	while (cociente != 1)
+	for (i = 1; d < n; i++)
 	{
-		contador++;
-		divisor = divisor * 10;
-		cociente = n / divisor;
+		if (i <= n)
+		{
+			
+u = n % d;
+			d = n / d;
+			d = n / d;		_putchar(i + '0');
+			d = 10 * d;
 	}
-	printf("%d", contador);
-
-	d = 10;
-
-	do {
-		dig = n % d;
-		_putchar(dig + '0');
-		n = n / d;
-		_putchar('\n');
-
-	} while ((n / d) > 0);x
-
+	_putchar('\n');
 }
