@@ -1,18 +1,19 @@
 #include "holberton.h"
 /**
- *_strlen - count the number of elements in a string
+ *_puts - Print a string
  *
- *@s: Strign to evaluate
+ *@str: Strign to evaluate
  *Return: 0 Success;
  */
 
-int _strlen(char *s)
+void _puts(char *str)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
+		_putchar(str[i]);
 		i++;
 	}
-	return (i);
+	_putchar('\n');
 }
