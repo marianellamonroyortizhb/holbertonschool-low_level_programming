@@ -1,17 +1,18 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ *_strlen - count the number of elements in a string
  *
- * Return: Always 0.
+ *@s: Strign to evaluate
+ *Return: 0 Success;
  */
+
 int _strlen(char *s)
 {
-	int counter
-	char *str;
-	int len;
+	int i = 0;
 
-	str = "Holberton!";
-	len = _strlen(str);
-	printf("%d\n", len);
-	return (0);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
