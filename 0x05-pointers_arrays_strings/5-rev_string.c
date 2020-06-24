@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	int i, initial, final;
-	char aux[200];
+	char aux[1000];
 
 	i = 0;
 	initial = 0;
