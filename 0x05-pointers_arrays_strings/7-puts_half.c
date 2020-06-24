@@ -2,14 +2,14 @@
 /**
  *puts_half - Print a string avoiding the next character.
  *
- *@str: Strign to evaluate
+ *@str: String to evaluate
  *Return: 0 Success;
  */
 
 void puts_half(char *str)
 {
 	int i = 0;
-	int istart, j;
+	int istart;
 
 	while (str[i])
 	{
@@ -27,9 +27,9 @@ void puts_half(char *str)
 		istart = (i - 1) / 2;
 	}
 
-	for (j = istart; j < i; j++)
+	for (; str[istart]; istart++)
 	{
-		_putchar(str[j]);
+		_putchar(str[istart]);
 	}
 	_putchar('\n');
 }
