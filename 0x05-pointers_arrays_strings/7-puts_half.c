@@ -16,16 +16,15 @@ void puts_half(char *str)
 		i++;
 	}
 
-	if (i % 2 == 0)
-	{
+	if (i % 2 == 1)
 
-		istart = i / 2;
-	}
-
-	else
 	{
 		istart = (i - 1) / 2;
 	}
+	else
+        {
+                istart = i / 2;
+        }
 
 	for (; str[istart]; istart++)
 	{
