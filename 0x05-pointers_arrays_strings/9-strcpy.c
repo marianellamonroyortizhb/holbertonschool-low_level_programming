@@ -5,7 +5,7 @@
  *
  *@dest: string destination
  *@src: string source
- *Return:
+ *Return: string destination final
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -16,5 +16,7 @@ char *_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	}
 /*	dest [i] = src [i]; */
+	dest[i] = '\0';
+
 	return (dest);
 }
