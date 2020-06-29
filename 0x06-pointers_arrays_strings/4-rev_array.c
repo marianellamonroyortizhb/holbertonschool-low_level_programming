@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strcmp - function that compares two strings
- *@s1: first string
- *@s2: second string
+ * reverse_array - reverse an array with a size n
+ *@a: source array
+ *@n: size array
  * Return: Always 0.
  */
 void reverse_array(int *a, int n)
