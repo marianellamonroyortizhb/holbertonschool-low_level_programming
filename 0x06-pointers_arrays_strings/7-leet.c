@@ -9,30 +9,23 @@
  */
 char *leet(char *s)
 {
-	int n;
+	int n, m;
 
-	for (n = 0; s[n]; n++)
-	{
-		if (s[n] == 'a' || s[n] == 'A')
-		{
-			s[n] = '4';
-		}
-		else if(s[n] == 'e' || s[n] == 'E')
-                {
-                        s[n] = '3';
-                }
-		else if(s[n] == 'o' || s[n] == 'O')
-		{
-			s[n] = '0';
-                }
-		else if(s[n] == 't' || s[n] == 'T')
-		{
-			s[n] = '7';
-                }
-		else if(s[n] == 'l' || s[n] == 'L')
-		{
-			s[n] = '1';
-                }
-	}
+	char lower[] = "aeotl";
+	char upp[] = "AEOTL";
+	char decod[] = "43071";
+
+	for (n = 0 ; s[n]; n++)
+
+		for (m = 0; lower[m]; m++)
+
+			if (s[n] == lower[m])
+			{
+				s[n] = decod[m];
+			}
+			else if (s[n] == upp[m])
+			{
+				s[n] = decod[m];
+			}
 	return (s);
 }
