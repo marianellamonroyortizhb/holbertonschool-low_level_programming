@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *string_toupper - changes lowercase to uppercase.
+ *leet - decodes specific elements in a string
  *@s: source array
  *
- * Return: Always 0.
+ * Return: The string s decoded.
  */
 char *leet(char *s)
 {
@@ -19,11 +19,7 @@ char *leet(char *s)
 
 		for (m = 0; lower[m]; m++)
 
-			if (s[n] == lower[m])
-			{
-				s[n] = decod[m];
-			}
-			else if (s[n] == upp[m])
+			if (s[n] == lower[m] || s[n] == upp[m])
 			{
 				s[n] = decod[m];
 			}
