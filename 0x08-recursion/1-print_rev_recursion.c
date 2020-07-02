@@ -1,23 +1,22 @@
 #include "holberton.h"
 
 /**
- *_puts_recursion - Prints a strign recursively
+ *_print_rev_recursion - Prints that reverse a strign
  *
  *@s: Strign to evaluate
  *
  */
 
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 	{
+		_print_rev_recursion(s + 1);
 		_putchar(*s);
-		s++;
-		_puts_recursion(s);
 	}
 
 	else
 	{
-	_putchar('\n');
+		return;
 	}
 }
