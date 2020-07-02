@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *_pow_n - Prints a strign recursively
+ *pow_n - Prints a strign recursively
  *
  *@a: number
  *@b: sqrt of a number
