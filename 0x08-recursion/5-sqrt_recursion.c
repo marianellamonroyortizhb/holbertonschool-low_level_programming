@@ -1,23 +1,40 @@
 #include "holberton.h"
-
+int pow_n(int a, int b);
 /**
- *_puts_recursion - Prints a strign recursively
- *
- *@s: Strign to evaluate
- *
+ *_sqrt_recursion - Find the root of a number
+ *@n: number to evaluate
+ *Return: root of a number
  */
 
-void _puts_recursion(char *s)
+int _sqrt_recursion(int n)
 {
-	if (*s != '\0')
-	{
-		_putchar(*s);
-		s++;
-		_puts_recursion(s);
-	}
+	return (pow_n(n, 1));
+}
 
+/**
+ *_pow_n - Prints a strign recursively
+ *
+ *@a: number
+ *@b: sqrt of a number
+ *Return: Evaluate the root
+ */
+
+int pow_n(int a, int b)
+{
+	int mult;
+
+	mult = b * b;
+
+	if (mult < a)
+	{
+		return (pow_n(a, b + 1));
+	}
+	else if (mult == a)
+	{
+		return (b);
+	}
 	else
 	{
-	_putchar('\n');
+		return (-1);
 	}
 }
