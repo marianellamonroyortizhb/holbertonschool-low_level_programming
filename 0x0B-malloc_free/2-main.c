@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -8,15 +9,15 @@
  */
 int main(void)
 {
-	char *buffer;
+	char *s;
 
-	buffer = create_array(98, 'H');
-	if  (buffer == NULL)
+	s = str_concat("Betty ", "Holberton");
+	if (s == NULL)
 	{
-		printf("failed to allocate memory\n");
+		printf("failed\n");
 		return (1);
 	}
-	simple_print_buffer(buffer, 98);
-	free(buffer);
+	printf("%s\n", s);
+	free(s);
 	return (0);
 }
