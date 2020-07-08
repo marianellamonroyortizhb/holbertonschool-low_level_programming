@@ -5,7 +5,7 @@
  *create_array - create an array of characters.
  *@size: size of a unsigned integer
  *@c: character
- *
+ *Return: pointer ptr or NULL if fails or size is negative
  */
 
 char *create_array(unsigned int size, char c)
@@ -14,11 +14,11 @@ char *create_array(unsigned int size, char c)
 
 	unsigned int i;
 
-	ptr = (char*) malloc((size)*sizeof(char));
+	ptr = (char *) malloc((size) * sizeof(char));
 
 	if (size == 0)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	else
@@ -26,15 +26,12 @@ char *create_array(unsigned int size, char c)
 		for (i = 0; i < size; i++)
 
 		{
-/*			if (i == 0)
-			{ */
-				ptr[i] = c;
-/*			}*/
+			ptr[i] = c;
 		}
 
 		if (ptr != NULL)
 		{
-			return(ptr);
+			return (ptr);
 		}
 
 		else
