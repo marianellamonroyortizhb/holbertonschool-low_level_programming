@@ -27,6 +27,7 @@ char *create_array(unsigned int size, char c)
 
 		{
 			ptr[i] = c;
+
 		}
 
 		if (ptr != NULL)
@@ -34,10 +35,11 @@ char *create_array(unsigned int size, char c)
 			return (ptr);
 		}
 
-		else
+		else if (!ptr)
 		{
 			return (NULL);
 		}
 
 	}
+	return (0);
 }
