@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *create_array - create an array of characters.
+ *@size: size of a unsigned integer
+ *@c: character
+ *Return: pointer ptr or NULL if fails or size is negative
+ */
+
+int **alloc_grid(int width, int height)
+{
+	int *ptr = NULL;
+
+	int i, j;
+
+	ptr = (int *) malloc((size) * sizeof(int));
+
+	if (!ptr)
+	{
+		return (NULL);
+	}
+
+	if (width == 0)
+	{
+		return (NULL);
+	}
+	or (len = 1; str[len - 1]; len++)
+	{
+		;
+	}
+
+
+	else
+	{
+		for (i = 0; i < size; i++)
+
+		{
+			ptr[i] = 0;
+		}
+
+		if (ptr != NULL)
+		{
+			return (ptr);
+		}
+	}
+	return (0);
+}
