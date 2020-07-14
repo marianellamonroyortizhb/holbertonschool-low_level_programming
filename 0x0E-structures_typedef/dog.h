@@ -1,3 +1,6 @@
+#ifndef djangodog;
+#define djangodog;
+
 struct dog
 {
   char * name;
