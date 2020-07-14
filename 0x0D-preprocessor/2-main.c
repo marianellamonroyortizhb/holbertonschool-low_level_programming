@@ -1,7 +1,5 @@
 #include <stdio.h>
-#ifndef COMP_FILE_NAME
-#define COMP_FILE_NAME
-#endif
+
 /**
  *main - print the name of the compiled file
  *Return: 0 Sucessful
