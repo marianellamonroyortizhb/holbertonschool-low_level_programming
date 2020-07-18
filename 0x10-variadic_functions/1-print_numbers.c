@@ -6,7 +6,7 @@
  *
  * @n: input integer
  * @separator: string that separate the arguments
- * Return: Always
+ *
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -20,14 +20,19 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		int vtoprint = va_arg(args, int);
 
-		printf("%d", vtoprint);
-
+		if (args != NULL)
+		{
+			printf("%d", vtoprint);
+		}
+		else if (args == NULL)
+		{
+			printf("(nil)");
+		}
 			if (separator != NULL && i != (n - 1))
 			{
 				printf("%s", separator);
 			}
 	}
-
 	printf("\n");
 	va_end(args);
 }
