@@ -20,14 +20,19 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		char *vtoprint = va_arg(args, char*);
 
-		printf("%s", vtoprint);
-
+		if (args != NULL)
+		{
+			printf("%s", vtoprint);
+		}
+		else if (args == NULL)
+		{
+			printf("(nil)");
+		}
 			if (separator != NULL && i != (n - 1))
 			{
 				printf("%s", separator);
 			}
 	}
-
 	printf("\n");
 	va_end(args);
 }
