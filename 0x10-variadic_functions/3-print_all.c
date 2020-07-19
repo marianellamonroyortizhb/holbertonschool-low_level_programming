@@ -9,12 +9,14 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	const char *pformat = format;
-	int d;
 	char c, *s;
-	double f;
 
+	while (!format)
+	{
+		printf("\n");
+		return;
+	}
 	va_start(ap, format);
-	/* cief */
 	while (*pformat)
 	{
 		switch (*pformat++)
@@ -25,26 +27,24 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':              /* string */
 				s = va_arg(ap, char *);
-				if (s)
-					printf("%s", s);
-				else
+				if (!s)
+				{
 					printf("(nil)");
+					break;
+				}
+				printf("%s", s);
 				break;
 			case 'i':              /* int */
-				d = va_arg(ap, int);
-				printf("%d", d);
+				printf("%d", va_arg(ap, int));
 				break;
 			case 'f':              /* float */
-				f = va_arg(ap, double);
-				printf("%f", f);
+				printf("%f", va_arg(ap, double));
 				break;
 			default:
 				continue;
 		}
 		if (*(pformat))
 			printf(", ");
-		else
-			printf("\n");
 	}
-	va_end(ap);
+	va_end(ap), printf("\n");
 }
