@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - check the code for Holberton School students.
@@ -9,10 +8,11 @@
  */
 int main(void)
 {
-    char *concat;
+    char *s = "hello, world";
+    char *f = "oleh";
+    unsigned int n;
 
-    concat = string_nconcat("Holberton ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
+    n = _strspn(s, f);
+    printf("%u\n", n);
     return (0);
 }

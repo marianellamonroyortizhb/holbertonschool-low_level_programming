@@ -1,15 +1,10 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- *_calloc - check the code for Holberton School students.
- *@nmemb: string1
- *@size: string2
+ * _calloc -
  *
- * Return: 0 Success
+ * Return: 
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 

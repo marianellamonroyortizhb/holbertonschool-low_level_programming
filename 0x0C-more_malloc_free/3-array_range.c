@@ -1,15 +1,10 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- *array_range - check the code for Holberton School students.
- *@min: string1
- *@max: string2
+ * array_range -
  *
- * Return: 0 Success
+ * Return: 
  */
-
 int *array_range(int min, int max)
 {
 
