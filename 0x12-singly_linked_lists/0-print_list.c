@@ -2,7 +2,7 @@
 /**
  * print_list - prints all the elements of a list_t
  * @h: Constant list
- * Return: count of elements
+ * Return: Count of elements
  */
 size_t print_list(const list_t *h)
 {
