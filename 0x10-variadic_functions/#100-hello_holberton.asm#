@@ -1,8 +1,0 @@
-        global    _start
-
-          section   .text
-_start:   mov       rax, 1                  ; system call for write
-          syscall                           ; invoke operating system to do the write
-        section   .data
-
-message:  db        "Hello, Holberton", 10      ; note the newline at the end
