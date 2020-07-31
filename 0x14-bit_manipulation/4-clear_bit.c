@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * clear_bit -
+ * clear_bit -  hdes
  *@n: int
  *@index: index
  * Return: Always
