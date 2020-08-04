@@ -9,26 +9,25 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	long int fd;
+	int fd0, fd1, fd2;
 
 	if (filename == NULL)
-	{
 		return (0);
-	}
 
-	fd = open(filename, O_RDONLY);
+	fd0 = open(filename, O_RDONLY);
+		if (fd0 == -1)
+			return (0);
+/*		close(fd0); */
 
-	read(fd, (char *)filename, letters);
+	fd1 = read(fd0, (char *)filename, letters);
+		if (fd1 == -1)
+			return (0);
 
-	if (fd == -1)
-	{
-		return (0);
-	}
+	fd2 = write(STDOUT_FILENO, (char *)filename, letters);
 
-	else
-	{
-		printf("%s", filename);
-		return (letters);
-	}
-	close(fd);
+		if (fd2 == -1)
+			return (0);
+
+	close(fd0);
+	return (fd2);
 }
