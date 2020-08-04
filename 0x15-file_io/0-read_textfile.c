@@ -14,21 +14,25 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	aux = malloc(sizeof(letters));
 
-	if (aux == NULL || filename == NULL)
+	if (!filename)
+		return (0);
+	
+	if (!aux)
 		return (0);
 
 	fd0 = open(filename, O_RDONLY);
 		if (fd0 == -1)
-			return (0);
+			return (free(aux), 0);
 
 	fd1 = read(fd0, aux, letters);
 		if (fd1 == -1)
-			return (0);
+			return (free(aux), 0);
 
-	fd2 = write(STDOUT_FILENO, aux, letters);
+	fd2 = write(STDOUT_FILENO, aux, fd1);
 		if (fd2 == -1)
-			return (0);
-	free(aux);
+			return (free(aux), 0);
+
+/*	free(aux); */
 	close(fd0);
 	return (fd2);
 }
