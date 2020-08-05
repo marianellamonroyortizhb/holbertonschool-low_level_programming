@@ -21,16 +21,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	fd0 = open(filename, O_RDONLY);
-		if (fd0 == -1)
-			return (free(aux), 0);
+	if (fd0 == -1)
+		return (free(aux), 0);
 
 	fd1 = read(fd0, aux, letters);
-		if (fd1 == -1)
-			return (free(aux), 0);
+	if (fd1 == -1)
+		return (free(aux), 0);
 
 	fd2 = write(STDOUT_FILENO, aux, fd1);
-		if (fd2 == -1)
-			return (free(aux), 0);
+	if (fd2 == -1)
+		return (free(aux), 0);
 
 	close(fd0);
 	free(aux);
