@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd0, fd1, fd2;
 	char *aux;
 
-	aux = malloc(sizeof(letters));
+	aux = malloc(letters * sizeof(char));
 
 	if (!filename)
 		return (0);
@@ -32,7 +32,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (fd2 == -1)
 			return (free(aux), 0);
 
-/*	free(aux); */
 	close(fd0);
+	free(aux);
 	return (fd2);
 }
