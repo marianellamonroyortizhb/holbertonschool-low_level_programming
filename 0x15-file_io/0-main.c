@@ -1,10 +1,12 @@
 #include "holberton.h"
+
 /**
  * main - check the code for Holberton School students.
  * @ac: Integer
  * @av: Double pointer
  * Return: Always 0.
  */
+
 int main(int ac, char **av)
 {
 	ssize_t n;
