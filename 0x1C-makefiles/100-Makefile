@@ -2,8 +2,7 @@ CC = gcc
 SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
 NAME = holberton
-RM = rm
-CFLAGS=-Wall -Werror -Wextra -pedantic
+CFLAGS= -Wall -Werror -Wextra -pedantic
 HEADER=m.h
 
 all: $(HEADER) $(OBJ)
