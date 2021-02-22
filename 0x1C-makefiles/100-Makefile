@@ -19,4 +19,4 @@ fclean:
 
 re: oclean all
 
-.PHONY: all clen oclean fclean re
+.PHONY: all clean oclean fclean re
