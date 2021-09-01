@@ -19,10 +19,10 @@ int binary_search(int *array, size_t size, int value)
 	three = size - 1;
 
 
-	while (one <= three 
+	while (one <= three) 
 	{
-		two = (one + three  / 2;
-		print_array(array, three  one);
+		two = (one + three)  / 2;
+		print_array(array, three, one);
 		if (array[two] < value)
 		{
 			one = two + 1;
@@ -39,13 +39,13 @@ int binary_search(int *array, size_t size, int value)
 	return (-1);
 }
 
-void print_array(int *array, int three  int one)
+void print_array(int *array, int three, int one)
 {
 	printf("Searching in array:");
 
-	while (one <= three 
+	while (one <= three) 
 	{
-		if (one == three 
+		if (one == three) 
 		{
 			printf(" %d", array[one]);
 		}
