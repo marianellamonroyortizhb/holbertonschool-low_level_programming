@@ -5,11 +5,11 @@
  * @array: array
  * @size: array size
  * @value: value to find
- * Return: 0
+ * Return: -1 or size
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t a_size;
+	size_t a_size; 
 
 	if (!array)
 		return (-1);
